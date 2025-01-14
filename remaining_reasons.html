@@ -111,7 +111,7 @@
       data.forEach(d => d.Count = +d.Count);
 
       // Sort data by Count in descending order and slice the top 10
-      const top10 = data.sort((a, b) => b.Count - a.Count).slice(0, 10);
+      const top10 = data.sort((a, b) => b.Count - a.Count).slice(0, 44);
 
       // Define scales
       const x = d3.scaleBand()
@@ -183,11 +183,7 @@
       console.error("Error loading the CSV file:", error);
     });
 
-    // Function to toggle iframe visibility
-    function toggleIframe() {
-      const iframeContainer = document.querySelector(".iframe-container");
-      iframeContainer.style.display = iframeContainer.style.display === "none" ? "block" : "none";
-    }
   </script>
+
 </body>
 </html>
